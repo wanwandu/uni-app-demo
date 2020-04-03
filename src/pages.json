@@ -1,0 +1,95 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/index/index",
+		// 	"style": {
+
+		// 	}
+		// },
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hot/hot",
+			"style": {
+				"navigationBarTitleText": "好房",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "楼盘列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/news/list/list",
+			"style": {
+				"navigationBarTitleText": "新闻列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/news/detail/detail",
+			"style": {
+				"navigationBarTitleText": "新闻详情",
+				"enablePullDownRefresh": false
+			}
+		},{
+            "path" : "pages/citys/citys",
+            "style" : {
+				"navigationBarTitleText": "城市选择",
+				"enablePullDownRefresh": false
+			}
+        }
+    ],
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式（list 的索引项）
+		"list": [{
+			"name": "首页", //模式名称
+			"path": "pages/home/home" //启动页面，必选
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#38447F",
+		"borderStyle": "black",
+		"fontSize": "12px",
+		"iconWidth": "24px",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/images/tab-home-1.png",
+				"selectedIconPath": "static/images/tab-home-2.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/hot/hot",
+				"iconPath": "static/images/tab-hot-1.png",
+				"selectedIconPath": "static/images/tab-hot-2.png",
+				"text": "好房"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/images/tab-mine-1.png",
+				"selectedIconPath": "static/images/tab-mine-2.png",
+				"text": "我的"
+			}
+		]
+	}
+}
